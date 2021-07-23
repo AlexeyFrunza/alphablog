@@ -1,0 +1,115 @@
+@import 'bootstrap/dist/css/bootstrap';
+.navbar {
+  padding: 0;
+  width: inherit;
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+.nav-link {
+  color:rgb(94, 78, 231);
+  font-size: 22px;
+  height: 100%;
+  width: 15%;
+}
+.nav-link:hover{
+  background-color: rgb(94, 78, 231);
+  color:white;
+  border-radius: 3px;
+  box-shadow: 0 0 0.5em rgb(144, 143, 207);
+  transition-duration: 0.4s;
+}
+a {
+  text-decoration: none;
+}
+.main_content {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.subheader {
+  text-align: left;
+  margin-left: 15%;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 32px;
+}
+.header {
+  text-align: left;
+  margin-left: 15%;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 72px;
+  cursor: pointer;
+}
+.subline {
+  height: 3px;
+  width: inherit;
+  background-color: white;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.text {
+  color: white;
+  font-size: large;
+}
+.home-container {
+  width: 90%;
+  height: 95%;
+  background: linear-gradient(to left, rgb(144, 143, 207),rgb(94, 78, 231));
+  border-radius: 5px;
+  padding: 0 !important;
+  display: inline-block;
+}
+.content {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 10%;
+}
+.nav-icon {
+  font-family: 'Arizonia', cursive;
+  text-decoration: none;
+  font-size: 20px;
+}
+.icon {
+  font-family: 'Arizonia', cursive;
+  text-decoration: none;
+  color: white;
+  font-size: 100px;
+}
+.icon:hover {
+  color: white;
+}
+.purple_text {
+  color: rgb(94, 78, 231);
+}
+.btn_purple_text {
+  color: rgb(94, 78, 231);
+  background-color: white;
+}
+.purple_btn {
+  color:rgb(94, 78, 231);
+  font-size: 20px;
+}
+.purple_btn:hover {
+  background-color: rgb(94, 78, 231);
+  color:white;
+  border-radius: 3px;
+  box-shadow: 0 0 0.5em rgb(144, 143, 207);
+  transition-duration: 0.4s;
+}
+.card-body {
+  background: linear-gradient(to left, rgb(100, 98, 185),rgb(94, 78, 231)) !important;
+}
+.inverted_btn {
+  background-color: white !important;
+  color:rgb(94, 78, 231)!important;
+  border-radius: 3px;
+}
+.inverted_btn:hover {
+  box-shadow: 0 0 0.5em white;
+  transition-duration: 0.4s;
+}
