@@ -1,0 +1,35 @@
+
+<div class="container shadow-sm p-3 mb-5 mt-5 rounded card-body signup">
+<%= render 'shared/errors', obj: @user %>
+<div class="row justify-content-center">
+  <div class="justify-content-center">
+  <%= form_with(model: @user, local: true) do |f| %>
+    <div class="form-group row">
+      <%= f.label :username, class: "col-form-label text-center text-light" %>
+      <div>
+        <%= f.text_field :username, class: "form-control mt-3", placeholder: "Enter a username" %>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :email , class: "col-form-label text-light text-center" %>
+      <div class="">
+        <%= f.email_field :email, class: "form-control mt-3", placeholder: "Enter your email address" %>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :password , class: "col-form-label text-light text-center" %>
+      <div class="">
+        <%= f.password_field :password, class: "form-control mt-3", placeholder: "Choose a password" %>
+      </div>
+    </div>
+
+    <p class="text-center mt-4">
+      <%= f.submit "Sign up", class: "btn btn-lg inverted_btn"%>
+    </p>
+  <% end %>
+  <%= link_to '[Cancel and return to articles listing]', articles_path, class: "text-light" %>
+  </div>
+</div>
+</div>

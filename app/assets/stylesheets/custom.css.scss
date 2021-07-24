@@ -10,7 +10,7 @@
   color:rgb(94, 78, 231);
   font-size: 22px;
   height: 100%;
-  width: 15%;
+  width: 12%;
 }
 .nav-link:hover{
   background-color: rgb(94, 78, 231);
@@ -112,4 +112,13 @@ a {
 .inverted_btn:hover {
   box-shadow: 0 0 0.5em white;
   transition-duration: 0.4s;
+}
+.signup {
+  width: 50%;
+}
+.sign_up_icon {
+  font-family: 'Arizonia', cursive;
+  text-decoration: none;
+  color: rgb(94, 78, 231);
+  font-size: 100px;
 }
