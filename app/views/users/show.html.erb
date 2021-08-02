@@ -1,0 +1,7 @@
+<h1 class="text-center mt-4 purple_text"><%= @user.username %></h1>
+<%= gravatar_for @user, size: 300 %>
+<div class="text-center mt-4">
+  <%= link_to "Edit your profile", edit_user_path(@user), class: "btn btn_purple_text" %>
+</div>
+<h3 class="text-center mt-4 purple_text">Articles</h3>
+<%= render 'articles/article' %>
