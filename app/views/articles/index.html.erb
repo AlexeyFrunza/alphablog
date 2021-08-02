@@ -1,3 +1,9 @@
-<h1 class="text-center purple_text m-3">Articles listing page</h1>  
+<h1 class="text-center purple_text m-3">Articles listing page</h1>
+<div class="flickr_pagination">
+  <%= will_paginate @articles, :container => false %>
+</div>    
 <%= render 'article' %>
 <p class="text-center"><%= link_to '+', new_article_path, class: "btn purple_btn btn-lg"%></p>
+<div class="flickr_pagination mb-4">
+  <%= will_paginate @articles, :container => false %>
+</div>  
