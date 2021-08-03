@@ -3,6 +3,11 @@
         <%= link_to "Alpha", root_path, class: "nav-link nav-icon", id: "logo" %>
         <%= link_to "Articles", articles_path, class: "nav-link dropdown-item" %>
         <%= link_to "Bloggers", users_path, class: "nav-link dropdown-item" %>
-        <%= link_to "Sign up",signup_path, class: "nav-link" %>
+        <% if logged_in? %>
+        <%= link_to "Profile", current_user, class: "nav-link dropdown-item" %>
+          <%= link_to "Log out", logout_path, class: "nav-link dropdown-item", method: :delete %>
+        <% else %>
+          <%= link_to "Log in", login_path, class: "nav-link dropdown-item" %>
+        <% end %>
       </nav>
     </div> 
