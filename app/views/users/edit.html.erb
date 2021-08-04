@@ -1,2 +1,3 @@
 <h1 class="text-center mt-4 purple_text">Edit your profile</h1>
 <%= render 'form' %>
+<p class="text-center"><%= link_to 'Delete your account', user_path(current_user), class: "btn btn-danger", method: :delete, data: {confirm: "Are you sure?"} %></p>
